@@ -54,7 +54,6 @@ public class Mandelbrot extends JPanel {
         minIM = imCenter - (imRange / 2);
         maxIM = imCenter + (imRange / 2);
 
-
         executeMandelbrotWorker();
     }
     public void executeMandelbrotWorker(){
@@ -62,7 +61,7 @@ public class Mandelbrot extends JPanel {
         mandelbrotWorker.execute();
     }
     public void saveImage(){
-        //Name consists of chosen color, time/cords
+        //Name consists of time
         LocalDateTime time = LocalDateTime.now();
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd-HH-mm-ss");
         String timestamp = time.format(formatter);

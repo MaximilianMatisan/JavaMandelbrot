@@ -73,7 +73,7 @@ public class FractalColors {
         Color[] colorPalette = new Color[colorAmount];
 
         for (int i = 0; i < colorAmount; i++) {
-            float factor = i / (float) colorAmount;
+            float factor = i / (float) (colorAmount - 1);
             int r = (int) (color1.getRed() + (color2.getRed() - color1.getRed()) * factor);
             int g = (int) (color1.getGreen() + (color2.getGreen() - color1.getGreen()) * factor);
             int b = (int) (color1.getBlue() + (color2.getBlue() - color1.getBlue()) * factor);
